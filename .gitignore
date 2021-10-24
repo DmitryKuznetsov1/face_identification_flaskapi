@@ -130,8 +130,10 @@ dmypy.json
 
 # myfiles
 .idea
-.ipynb_checkpoints
+.ipynb_checkpoints/
 __pycache__
 .git
-samples/.ipynb_checkpoints
-data/.ipynb_checkpoints
+samples/.ipynb_checkpoints/
+data/.ipynb_checkpoints/
+#history/successful/*
+#history/unsuccessful/*

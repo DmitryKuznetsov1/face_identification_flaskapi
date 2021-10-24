@@ -29,6 +29,10 @@ class FaceIdentifier():
         #     "Порог тончости": "0.7",
         #     "Отосланное фото сохранено в": "../history/unsuccessful/0001.jpeg"
         # }
+        if "history" not in os.listdir():
+            os.mkdir("history")
+            os.mkdir(self.successful_dir)
+            os.mkdir(self.unsuccessful_dir)
 
     def identify(self, input_image_arr: np.ndarray, ID: str, request_time: float) -> dict:
         are_similar = None
