@@ -15,8 +15,7 @@ def init_params(config_file: str, *to_eval) -> dict:
     """
     with open(config_file, 'r') as json_params:
         params = json.load(json_params)
-    for name in to_eval:
-        params[name] = eval(params[name])
+        params['tolerance'] = eval(params['tolerance'])
     return params
 
 
